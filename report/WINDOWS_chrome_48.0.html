@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>test result</h1>
-<p class='attribute'><strong>Start Time:</strong> 2016-02-17 16:08:52</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:10.671000</p>
-<p class='attribute'><strong>Status:</strong> Pass 4</p>
+<p class='attribute'><strong>Start Time:</strong> 2016-03-01 17:43:28</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:04.103000</p>
+<p class='attribute'><strong>Status:</strong> Error 4</p>
 
 <p class='description'>test report</p>
 </div>
@@ -221,41 +221,213 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='errorClass'>
     <td>Grid2</td>
     <td>4</td>
+    <td>0</td>
+    <td>0</td>
     <td>4</td>
-    <td>0</td>
-    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',4)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_google</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_ibm</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: Traceback (most recent call last):
+  File "../src/python/runner.py", line 17, in setUp
+    "version":version
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 87, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 141, in start_session
+    'desiredCapabilities': desired_capabilities,
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 199, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "C:\Python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "C:\Python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "C:\Python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "C:\Python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "C:\Python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: &lt;urlopen error [Errno 10061] &gt;
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
-<tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_python</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft1.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_python</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        error</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: Traceback (most recent call last):
+  File "../src/python/runner.py", line 17, in setUp
+    "version":version
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 87, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 141, in start_session
+    'desiredCapabilities': desired_capabilities,
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 199, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "C:\Python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "C:\Python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "C:\Python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "C:\Python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "C:\Python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: &lt;urlopen error [Errno 10061] &gt;
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
-<tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_stackoverflow</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft1.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_stackoverflow</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        error</a>
+
+    <div id='div_ft1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.3: Traceback (most recent call last):
+  File "../src/python/runner.py", line 17, in setUp
+    "version":version
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 87, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 141, in start_session
+    'desiredCapabilities': desired_capabilities,
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 199, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "C:\Python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "C:\Python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "C:\Python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "C:\Python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "C:\Python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: &lt;urlopen error [Errno 10061] &gt;
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
-<tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_yahoo</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft1.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_yahoo</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        error</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: Traceback (most recent call last):
+  File "../src/python/runner.py", line 17, in setUp
+    "version":version
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 87, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 141, in start_session
+    'desiredCapabilities': desired_capabilities,
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 199, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 395, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Python27\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 463, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "C:\Python27\lib\urllib2.py", line 431, in open
+    response = self._open(req, data)
+  File "C:\Python27\lib\urllib2.py", line 449, in _open
+    '_open', req)
+  File "C:\Python27\lib\urllib2.py", line 409, in _call_chain
+    result = func(*args)
+  File "C:\Python27\lib\urllib2.py", line 1227, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "C:\Python27\lib\urllib2.py", line 1197, in do_open
+    raise URLError(err)
+URLError: &lt;urlopen error [Errno 10061] &gt;
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
     <td>4</td>
+    <td>0</td>
+    <td>0</td>
     <td>4</td>
-    <td>0</td>
-    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>
