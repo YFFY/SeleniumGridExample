@@ -2,7 +2,6 @@ import sys
 import unittest
 
 from selenium import webdriver
-
 import HTMLTestRunner
 
 
@@ -18,17 +17,17 @@ class Grid2(unittest.TestCase):
             "version":version
         })
 
-    def test_google(self):
-        self.driver.get("http://www.google.com")
-        self.assertEqual(self.driver.title, "Google")
+    def test_ibm(self):
+        self.driver.get("http://www.ibm.com/us-en/")
+        self.assertEqual(self.driver.title, "IBM - United States")
 
     def test_python(self):
         self.driver.get("https://www.python.org/")
         self.assertEqual("Welcome to Python.org", self.driver.title)
 
     def test_yahoo(self):
-        self.driver.get("https://www.yahoo.com/")
-        self.assertEqual("Mail", self.driver.find_element_by_link_text("Mail").text)
+        self.driver.get("http://clang.llvm.org/get_started.html")
+        self.assertEqual("Clang - Getting Started", self.driver.title)
 
     def test_stackoverflow(self):
         self.driver.get("http://stackoverflow.com/")
