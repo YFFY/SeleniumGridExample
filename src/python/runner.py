@@ -1,7 +1,10 @@
-from selenium import webdriver
-import unittest
 import sys
+import unittest
+
+from selenium import webdriver
+
 import HTMLTestRunner
+
 
 class Grid2(unittest.TestCase):
 
